@@ -1,0 +1,550 @@
+2025-12-08 12:49:34 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 13080 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 12:49:34 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 12:49:35 - Tomcat initialized with port 5500 (http)
+2025-12-08 12:49:35 - Starting service [Tomcat]
+2025-12-08 12:49:35 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 12:49:35 - Initializing Spring embedded WebApplicationContext
+2025-12-08 12:49:35 - Root WebApplicationContext: initialization completed in 1736 ms
+2025-12-08 12:49:36 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardTransferController' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\controller\CardTransferController.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'card_transfer.card_transfer_backend.service.TransferID' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-12-08 12:49:36 - Stopping service [Tomcat]
+2025-12-08 12:49:36 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-08 12:49:36 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in card_transfer.card_transfer_backend.controller.CardTransferController required a bean of type 'card_transfer.card_transfer_backend.service.TransferID' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'card_transfer.card_transfer_backend.service.TransferID' in your configuration.
+
+2025-12-08 12:51:50 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 4900 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 12:51:50 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 12:51:52 - Tomcat initialized with port 5500 (http)
+2025-12-08 12:51:52 - Starting service [Tomcat]
+2025-12-08 12:51:52 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 12:51:52 - Initializing Spring embedded WebApplicationContext
+2025-12-08 12:51:52 - Root WebApplicationContext: initialization completed in 1509 ms
+2025-12-08 12:51:53 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 12:51:53 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 12:51:53 - Started CardTransferBackendApplication in 3.299 seconds (process running for 3.696)
+2025-12-08 12:57:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 12:57:22 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 12:57:22 - Completed initialization in 0 ms
+2025-12-08 12:59:53 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 12:59:53 - Graceful shutdown complete
+2025-12-08 13:00:29 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 17328 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:00:29 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:00:30 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:00:30 - Starting service [Tomcat]
+2025-12-08 13:00:30 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:00:31 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:00:31 - Root WebApplicationContext: initialization completed in 1471 ms
+2025-12-08 13:00:31 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:00:31 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:00:31 - Started CardTransferBackendApplication in 3.02 seconds (process running for 3.405)
+2025-12-08 13:00:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:00:39 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:00:39 - Completed initialization in 2 ms
+2025-12-08 13:02:24 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:02:24 - Graceful shutdown complete
+2025-12-08 13:02:38 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 1136 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:02:38 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:02:41 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:02:41 - Starting service [Tomcat]
+2025-12-08 13:02:41 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:02:41 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:02:41 - Root WebApplicationContext: initialization completed in 2839 ms
+2025-12-08 13:02:42 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:02:42 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:02:42 - Started CardTransferBackendApplication in 5.317 seconds (process running for 6.104)
+2025-12-08 13:02:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:02:49 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:02:49 - Completed initialization in 5 ms
+2025-12-08 13:05:12 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:05:12 - Graceful shutdown complete
+2025-12-08 13:29:29 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 14788 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:29:29 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:29:31 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:29:31 - Starting service [Tomcat]
+2025-12-08 13:29:31 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:29:31 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:29:31 - Root WebApplicationContext: initialization completed in 1547 ms
+2025-12-08 13:29:32 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:29:32 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:29:32 - Started CardTransferBackendApplication in 3.205 seconds (process running for 3.594)
+2025-12-08 13:29:41 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:29:41 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:29:41 - Completed initialization in 6 ms
+2025-12-08 13:35:51 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:35:51 - Graceful shutdown complete
+2025-12-08 13:36:19 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 19392 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:36:19 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:36:20 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:36:20 - Starting service [Tomcat]
+2025-12-08 13:36:20 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:36:20 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:36:20 - Root WebApplicationContext: initialization completed in 1513 ms
+2025-12-08 13:36:21 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:36:21 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:36:21 - Started CardTransferBackendApplication in 3.163 seconds (process running for 3.553)
+2025-12-08 13:36:27 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:36:27 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:36:27 - Completed initialization in 2 ms
+2025-12-08 13:42:08 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:42:08 - Graceful shutdown complete
+2025-12-08 13:42:31 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 18656 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:42:31 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:42:32 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:42:32 - Starting service [Tomcat]
+2025-12-08 13:42:32 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:42:32 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:42:32 - Root WebApplicationContext: initialization completed in 1458 ms
+2025-12-08 13:42:33 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:42:33 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:42:33 - Started CardTransferBackendApplication in 3.125 seconds (process running for 3.5)
+2025-12-08 13:42:46 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:42:46 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:42:46 - Completed initialization in 2 ms
+2025-12-08 13:44:36 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:44:36 - Graceful shutdown complete
+2025-12-08 13:46:19 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 12456 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:46:19 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:46:20 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:46:20 - Starting service [Tomcat]
+2025-12-08 13:46:20 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:46:20 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:46:20 - Root WebApplicationContext: initialization completed in 1487 ms
+2025-12-08 13:46:21 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:46:21 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:46:21 - Started CardTransferBackendApplication in 3.146 seconds (process running for 3.571)
+2025-12-08 13:46:26 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:46:26 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:46:26 - Completed initialization in 0 ms
+2025-12-08 13:47:35 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:47:35 - Graceful shutdown complete
+2025-12-08 13:47:57 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 12748 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:47:57 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:47:59 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:47:59 - Starting service [Tomcat]
+2025-12-08 13:47:59 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:47:59 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:47:59 - Root WebApplicationContext: initialization completed in 1461 ms
+2025-12-08 13:47:59 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:47:59 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:47:59 - Started CardTransferBackendApplication in 3.091 seconds (process running for 3.485)
+2025-12-08 13:48:05 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:48:05 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:48:05 - Completed initialization in 2 ms
+2025-12-08 13:50:01 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:50:01 - Graceful shutdown complete
+2025-12-08 13:57:12 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 17256 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:57:12 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:57:13 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:57:13 - Starting service [Tomcat]
+2025-12-08 13:57:13 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:57:13 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:57:13 - Root WebApplicationContext: initialization completed in 1529 ms
+2025-12-08 13:57:14 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:57:14 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:57:14 - Started CardTransferBackendApplication in 3.159 seconds (process running for 3.527)
+2025-12-08 13:57:19 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:57:19 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:57:19 - Completed initialization in 2 ms
+2025-12-08 13:57:35 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:57:35 - Graceful shutdown complete
+2025-12-08 13:58:22 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 21792 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 13:58:22 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 13:58:23 - Tomcat initialized with port 5500 (http)
+2025-12-08 13:58:23 - Starting service [Tomcat]
+2025-12-08 13:58:23 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 13:58:23 - Initializing Spring embedded WebApplicationContext
+2025-12-08 13:58:23 - Root WebApplicationContext: initialization completed in 1479 ms
+2025-12-08 13:58:24 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 13:58:24 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 13:58:24 - Started CardTransferBackendApplication in 3.064 seconds (process running for 3.433)
+2025-12-08 13:58:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 13:58:32 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 13:58:32 - Completed initialization in 5 ms
+2025-12-08 13:59:15 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 13:59:15 - Graceful shutdown complete
+2025-12-08 14:02:25 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 17400 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 14:02:25 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 14:02:27 - Tomcat initialized with port 5500 (http)
+2025-12-08 14:02:27 - Starting service [Tomcat]
+2025-12-08 14:02:27 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 14:02:27 - Initializing Spring embedded WebApplicationContext
+2025-12-08 14:02:27 - Root WebApplicationContext: initialization completed in 1435 ms
+2025-12-08 14:02:28 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 14:02:28 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 14:02:28 - Started CardTransferBackendApplication in 3.042 seconds (process running for 3.413)
+2025-12-08 14:02:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 14:02:38 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 14:02:38 - Completed initialization in 3 ms
+2025-12-08 14:03:36 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 14:03:36 - Graceful shutdown complete
+2025-12-08 16:26:56 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 2416 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 16:26:56 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 16:26:57 - Tomcat initialized with port 5500 (http)
+2025-12-08 16:26:57 - Starting service [Tomcat]
+2025-12-08 16:26:57 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 16:26:57 - Initializing Spring embedded WebApplicationContext
+2025-12-08 16:26:57 - Root WebApplicationContext: initialization completed in 1424 ms
+2025-12-08 16:26:58 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 16:26:58 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 16:26:58 - Started CardTransferBackendApplication in 3.088 seconds (process running for 3.508)
+2025-12-08 16:27:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 16:27:07 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 16:27:07 - Completed initialization in 0 ms
+2025-12-08 16:29:07 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 16:29:07 - Graceful shutdown complete
+2025-12-08 17:43:49 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 14868 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 17:43:49 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 17:43:50 - Tomcat initialized with port 5500 (http)
+2025-12-08 17:43:50 - Starting service [Tomcat]
+2025-12-08 17:43:50 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 17:43:51 - Initializing Spring embedded WebApplicationContext
+2025-12-08 17:43:51 - Root WebApplicationContext: initialization completed in 1917 ms
+2025-12-08 17:43:51 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardTransferController' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\controller\CardTransferController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cardTransferService' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\service\CardTransferService.class]: Failed to instantiate [card_transfer.card_transfer_backend.service.CardTransferService]: No default constructor found
+2025-12-08 17:43:51 - Stopping service [Tomcat]
+2025-12-08 17:43:51 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-08 17:43:51 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardTransferController' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\controller\CardTransferController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cardTransferService' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\service\CardTransferService.class]: Failed to instantiate [card_transfer.card_transfer_backend.service.CardTransferService]: No default constructor found
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at card_transfer.card_transfer_backend.CardTransferBackendApplication.main(CardTransferBackendApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cardTransferService' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\service\CardTransferService.class]: Failed to instantiate [card_transfer.card_transfer_backend.service.CardTransferService]: No default constructor found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [card_transfer.card_transfer_backend.service.CardTransferService]: No default constructor found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:119)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351)
+	... 32 common frames omitted
+Caused by: java.lang.NoSuchMethodException: card_transfer.card_transfer_backend.service.CardTransferService.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3784)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2955)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:115)
+	... 33 common frames omitted
+2025-12-08 17:45:21 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 22384 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 17:45:21 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 17:45:23 - Tomcat initialized with port 5500 (http)
+2025-12-08 17:45:23 - Starting service [Tomcat]
+2025-12-08 17:45:23 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 17:45:23 - Initializing Spring embedded WebApplicationContext
+2025-12-08 17:45:23 - Root WebApplicationContext: initialization completed in 1864 ms
+2025-12-08 17:45:24 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardTransferController' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\controller\CardTransferController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cardTransferService' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\service\CardTransferService.class]: Failed to instantiate [card_transfer.card_transfer_backend.service.CardTransferService]: No default constructor found
+2025-12-08 17:45:24 - Stopping service [Tomcat]
+2025-12-08 17:45:24 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-08 17:45:24 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardTransferController' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\controller\CardTransferController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cardTransferService' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\service\CardTransferService.class]: Failed to instantiate [card_transfer.card_transfer_backend.service.CardTransferService]: No default constructor found
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at card_transfer.card_transfer_backend.CardTransferBackendApplication.main(CardTransferBackendApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cardTransferService' defined in file [D:\ProjectEroxa\card-transfer-backend\target\classes\card_transfer\card_transfer_backend\service\CardTransferService.class]: Failed to instantiate [card_transfer.card_transfer_backend.service.CardTransferService]: No default constructor found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [card_transfer.card_transfer_backend.service.CardTransferService]: No default constructor found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:119)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351)
+	... 32 common frames omitted
+Caused by: java.lang.NoSuchMethodException: card_transfer.card_transfer_backend.service.CardTransferService.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3784)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2955)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:115)
+	... 33 common frames omitted
+2025-12-08 17:47:10 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 18364 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 17:47:10 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 17:47:12 - Tomcat initialized with port 5500 (http)
+2025-12-08 17:47:12 - Starting service [Tomcat]
+2025-12-08 17:47:12 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 17:47:12 - Initializing Spring embedded WebApplicationContext
+2025-12-08 17:47:12 - Root WebApplicationContext: initialization completed in 1886 ms
+2025-12-08 17:47:13 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 17:47:13 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 17:47:13 - Started CardTransferBackendApplication in 3.804 seconds (process running for 4.254)
+2025-12-08 17:47:54 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 17:47:54 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 17:47:54 - Completed initialization in 0 ms
+2025-12-08 17:48:42 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 17:48:42 - Graceful shutdown complete
+2025-12-08 17:49:06 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 16800 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 17:49:06 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 17:49:10 - Tomcat initialized with port 5500 (http)
+2025-12-08 17:49:10 - Starting service [Tomcat]
+2025-12-08 17:49:10 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 17:49:10 - Initializing Spring embedded WebApplicationContext
+2025-12-08 17:49:10 - Root WebApplicationContext: initialization completed in 3544 ms
+2025-12-08 17:49:11 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 17:49:12 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 17:49:12 - Started CardTransferBackendApplication in 6.936 seconds (process running for 7.413)
+2025-12-08 17:49:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 17:49:43 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 17:49:43 - Completed initialization in 1 ms
+2025-12-08 17:51:29 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 17:51:29 - Graceful shutdown complete
+2025-12-08 17:51:34 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 8916 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 17:51:34 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 17:51:36 - Tomcat initialized with port 5500 (http)
+2025-12-08 17:51:36 - Starting service [Tomcat]
+2025-12-08 17:51:36 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 17:51:36 - Initializing Spring embedded WebApplicationContext
+2025-12-08 17:51:36 - Root WebApplicationContext: initialization completed in 1896 ms
+2025-12-08 17:51:37 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 17:51:37 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 17:51:37 - Started CardTransferBackendApplication in 3.882 seconds (process running for 4.369)
+2025-12-08 17:51:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 17:51:43 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 17:51:43 - Completed initialization in 0 ms
+2025-12-08 17:52:57 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 17:52:57 - Graceful shutdown complete
+2025-12-08 17:53:01 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 8388 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 17:53:01 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 17:53:03 - Tomcat initialized with port 5500 (http)
+2025-12-08 17:53:03 - Starting service [Tomcat]
+2025-12-08 17:53:03 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 17:53:03 - Initializing Spring embedded WebApplicationContext
+2025-12-08 17:53:03 - Root WebApplicationContext: initialization completed in 1866 ms
+2025-12-08 17:53:04 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 17:53:04 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 17:53:04 - Started CardTransferBackendApplication in 3.828 seconds (process running for 4.244)
+2025-12-08 17:53:14 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 17:53:14 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 17:53:14 - Completed initialization in 0 ms
+2025-12-08 17:55:46 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 17:55:46 - Graceful shutdown complete
+2025-12-08 17:57:03 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 1616 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 17:57:03 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 17:57:05 - Tomcat initialized with port 5500 (http)
+2025-12-08 17:57:05 - Starting service [Tomcat]
+2025-12-08 17:57:05 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 17:57:05 - Initializing Spring embedded WebApplicationContext
+2025-12-08 17:57:05 - Root WebApplicationContext: initialization completed in 1936 ms
+2025-12-08 17:57:06 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 17:57:06 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 17:57:06 - Started CardTransferBackendApplication in 3.929 seconds (process running for 4.374)
+2025-12-08 17:57:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 17:57:13 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 17:57:13 - Completed initialization in 4 ms
+2025-12-08 17:58:39 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 17:58:39 - Graceful shutdown complete
+2025-12-08 18:03:04 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 23564 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 18:03:04 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 18:03:06 - Tomcat initialized with port 5500 (http)
+2025-12-08 18:03:06 - Starting service [Tomcat]
+2025-12-08 18:03:06 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 18:03:06 - Initializing Spring embedded WebApplicationContext
+2025-12-08 18:03:06 - Root WebApplicationContext: initialization completed in 1957 ms
+2025-12-08 18:03:07 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 18:03:07 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 18:03:07 - Started CardTransferBackendApplication in 3.919 seconds (process running for 4.344)
+2025-12-08 18:03:19 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 18:03:19 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 18:03:19 - Completed initialization in 3 ms
+2025-12-08 18:03:32 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 18:03:32 - Graceful shutdown complete
+2025-12-08 18:04:57 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 23636 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 18:04:57 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 18:05:00 - Tomcat initialized with port 5500 (http)
+2025-12-08 18:05:01 - Starting service [Tomcat]
+2025-12-08 18:05:01 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 18:05:01 - Initializing Spring embedded WebApplicationContext
+2025-12-08 18:05:01 - Root WebApplicationContext: initialization completed in 3565 ms
+2025-12-08 18:05:02 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 18:05:02 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 18:05:03 - Started CardTransferBackendApplication in 6.399 seconds (process running for 6.844)
+2025-12-08 18:05:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 18:05:07 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 18:05:07 - Completed initialization in 3 ms
+2025-12-08 18:06:52 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 18:06:52 - Graceful shutdown complete
+2025-12-08 18:16:24 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 19068 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 18:16:24 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 18:16:26 - Tomcat initialized with port 5500 (http)
+2025-12-08 18:16:26 - Starting service [Tomcat]
+2025-12-08 18:16:26 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 18:16:26 - Initializing Spring embedded WebApplicationContext
+2025-12-08 18:16:26 - Root WebApplicationContext: initialization completed in 2088 ms
+2025-12-08 18:16:27 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 18:16:27 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 18:16:27 - Started CardTransferBackendApplication in 4.332 seconds (process running for 4.848)
+2025-12-08 18:16:33 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 18:16:33 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 18:16:33 - Completed initialization in 4 ms
+2025-12-08 18:17:11 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 18:17:11 - Graceful shutdown complete
+2025-12-08 21:16:49 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 11576 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 21:16:49 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 21:16:50 - Tomcat initialized with port 5500 (http)
+2025-12-08 21:16:50 - Starting service [Tomcat]
+2025-12-08 21:16:50 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 21:16:50 - Initializing Spring embedded WebApplicationContext
+2025-12-08 21:16:50 - Root WebApplicationContext: initialization completed in 1137 ms
+2025-12-08 21:16:50 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 21:16:50 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 21:16:50 - Started CardTransferBackendApplication in 2.36 seconds (process running for 2.62)
+2025-12-08 21:17:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 21:17:02 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 21:17:02 - Completed initialization in 0 ms
+2025-12-08 21:20:25 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 21:20:25 - Graceful shutdown complete
+2025-12-08 21:22:12 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 9380 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 21:22:12 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 21:22:14 - Tomcat initialized with port 5500 (http)
+2025-12-08 21:22:14 - Starting service [Tomcat]
+2025-12-08 21:22:14 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 21:22:14 - Initializing Spring embedded WebApplicationContext
+2025-12-08 21:22:14 - Root WebApplicationContext: initialization completed in 1512 ms
+2025-12-08 21:22:14 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 21:22:15 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 21:22:15 - Started CardTransferBackendApplication in 3.206 seconds (process running for 3.628)
+2025-12-08 21:22:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 21:22:22 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 21:22:22 - Completed initialization in 0 ms
+2025-12-08 21:23:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 21:23:44 - Graceful shutdown complete
+2025-12-08 21:23:47 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 13680 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 21:23:47 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 21:23:48 - Tomcat initialized with port 5500 (http)
+2025-12-08 21:23:48 - Starting service [Tomcat]
+2025-12-08 21:23:48 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 21:23:48 - Initializing Spring embedded WebApplicationContext
+2025-12-08 21:23:48 - Root WebApplicationContext: initialization completed in 1568 ms
+2025-12-08 21:23:49 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 21:23:49 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 21:23:49 - Started CardTransferBackendApplication in 3.389 seconds (process running for 4.482)
+2025-12-08 21:23:58 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 21:23:58 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 21:23:58 - Completed initialization in 9 ms
+2025-12-08 21:26:30 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 21:26:30 - Graceful shutdown complete
+2025-12-08 21:28:36 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 23136 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 21:28:36 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 21:28:38 - Tomcat initialized with port 5500 (http)
+2025-12-08 21:28:38 - Starting service [Tomcat]
+2025-12-08 21:28:38 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 21:28:38 - Initializing Spring embedded WebApplicationContext
+2025-12-08 21:28:38 - Root WebApplicationContext: initialization completed in 1556 ms
+2025-12-08 21:28:39 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 21:28:39 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 21:28:39 - Started CardTransferBackendApplication in 3.362 seconds (process running for 3.895)
+2025-12-08 21:28:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 21:28:45 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 21:28:45 - Completed initialization in 2 ms
+2025-12-08 21:30:22 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 21:30:22 - Graceful shutdown complete
+2025-12-08 21:34:08 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 11032 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 21:34:08 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 21:34:10 - Tomcat initialized with port 5500 (http)
+2025-12-08 21:34:10 - Starting service [Tomcat]
+2025-12-08 21:34:10 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 21:34:10 - Initializing Spring embedded WebApplicationContext
+2025-12-08 21:34:10 - Root WebApplicationContext: initialization completed in 1500 ms
+2025-12-08 21:34:10 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 21:34:10 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 21:34:10 - Started CardTransferBackendApplication in 3.12 seconds (process running for 3.492)
+2025-12-08 21:34:20 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 21:34:20 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 21:34:20 - Completed initialization in 3 ms
+2025-12-08 21:36:47 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 21:36:47 - Graceful shutdown complete
+2025-12-08 21:38:40 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 24428 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 21:38:40 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 21:38:42 - Tomcat initialized with port 5500 (http)
+2025-12-08 21:38:42 - Starting service [Tomcat]
+2025-12-08 21:38:42 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 21:38:42 - Initializing Spring embedded WebApplicationContext
+2025-12-08 21:38:42 - Root WebApplicationContext: initialization completed in 1513 ms
+2025-12-08 21:38:43 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 21:38:43 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 21:38:43 - Started CardTransferBackendApplication in 3.067 seconds (process running for 3.412)
+2025-12-08 21:39:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 21:39:23 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 21:39:23 - Completed initialization in 4 ms
+2025-12-08 21:47:09 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 21:47:09 - Graceful shutdown complete
+2025-12-08 21:50:39 - Starting CardTransferBackendApplication using Java 22.0.2 with PID 19500 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-08 21:50:39 - No active profile set, falling back to 1 default profile: "default"
+2025-12-08 21:50:40 - Tomcat initialized with port 5500 (http)
+2025-12-08 21:50:40 - Starting service [Tomcat]
+2025-12-08 21:50:40 - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-08 21:50:40 - Initializing Spring embedded WebApplicationContext
+2025-12-08 21:50:40 - Root WebApplicationContext: initialization completed in 1541 ms
+2025-12-08 21:50:42 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08 21:50:42 - Tomcat started on port 5500 (http) with context path '/'
+2025-12-08 21:50:42 - Started CardTransferBackendApplication in 4.022 seconds (process running for 4.401)
+2025-12-08 21:50:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08 21:50:49 - Initializing Servlet 'dispatcherServlet'
+2025-12-08 21:50:49 - Completed initialization in 4 ms
+2025-12-08 21:52:43 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-08 21:52:43 - Graceful shutdown complete

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: card-transfer-backend
+
+server:
+  port: 5500
+
+logging:
+  file:
+    name: ./logs/transfer.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
