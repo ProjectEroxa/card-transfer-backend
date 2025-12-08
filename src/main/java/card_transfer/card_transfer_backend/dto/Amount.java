@@ -29,4 +29,12 @@ public class Amount {
     public String getCurrency() {
         return currency;
     }
+
+    @Override
+    public String toString() {
+        return "Amount{" +
+                "value=" + value +
+                ", currency='" + currency + '\'' +
+                '}';
+    }
 }

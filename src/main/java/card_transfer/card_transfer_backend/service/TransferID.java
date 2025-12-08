@@ -3,6 +3,7 @@ package card_transfer.card_transfer_backend.service;
 import org.springframework.stereotype.Component;
 
 import java.util.UUID;
+
 @Component
 public class TransferID {
 

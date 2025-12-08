@@ -53,4 +53,15 @@ public class TransferRequest {
     public String getCardToNumber() {
         return cardToNumber;
     }
+
+    @Override
+    public String toString() {
+        return "TransferRequest{" +
+                "cardFromNumber='" + cardFromNumber + '\'' +
+                ", cardFromValidTill='" + cardFromValidTill + '\'' +
+                ", cardFromCVV='" + cardFromCVV + '\'' +
+                ", cardToNumber='" + cardToNumber + '\'' +
+                ", amount=" + amount +
+                '}';
+    }
 }
