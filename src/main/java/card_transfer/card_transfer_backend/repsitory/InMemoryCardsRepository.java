@@ -28,7 +28,7 @@ public class InMemoryCardsRepository {
     }
 
     // меняют баланс карты
-
+    //в большую сторону
     public void setBalancePlus(String cardNumber, Integer sum) {
         for (Map.Entry<Card, Integer> entry : cardStorage.entrySet()) {
             if (entry.getKey().getCardNumber().equals(cardNumber)) {
@@ -36,11 +36,11 @@ public class InMemoryCardsRepository {
             }
         }
     }
-
+    //в меньшую сторону, со взыманием комиссии (1%)
     public void setBalanceMinus(String cardNumber, Integer sum) {
         for (Map.Entry<Card, Integer> entry : cardStorage.entrySet()) {
             if (entry.getKey().getCardNumber().equals(cardNumber)) {
-                entry.setValue(entry.getValue() - sum);
+                entry.setValue(entry.getValue() - sum - (sum / 100));
             }
         }
     }

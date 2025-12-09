@@ -43,6 +43,7 @@ public class CardTransferService {
     //списывает средства с карты from
     public void transferMinus(String cardNumber, Integer sum) {
         log.info("transferMinus sum = {} ", sum);
+        log.info("fee = 1% = {}", sum / 100);
         cardsRepository.setBalanceMinus(cardNumber, sum);
     }
 
