@@ -3,6 +3,7 @@ package card_transfer.card_transfer_backend.controller;
 import card_transfer.card_transfer_backend.service.TransferID;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -35,6 +36,18 @@ public class GlobalExceptionHandler {
                 .status(HttpStatus.BAD_REQUEST)
                 .body(Map.of(
                         "message", "Error input data",
+                        "operationId", new TransferID().generateID()
+                ));
+    }
+
+    //400 - для ошибок валидации Spring
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<Map<String, String>> handleValidationException(
+            MethodArgumentNotValidException ex) {
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body(Map.of(
+                        "message", "Validation error",
                         "operationId", new TransferID().generateID()
                 ));
     }
