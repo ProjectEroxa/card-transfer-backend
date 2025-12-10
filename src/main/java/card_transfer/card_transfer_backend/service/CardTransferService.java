@@ -33,17 +33,27 @@ public class CardTransferService {
 
     //проверяет, хватит ли средств на счете
     public boolean isBalanceSufficient(Amount amount, String cardNumber, String cardCVV, String cardExpirationDate) {
-        Integer balance = cardsRepository.getCardBalance(
-                new Card(cardNumber, cardCVV, cardExpirationDate)
-        );
-        log.info("check balance = {}", balance);
+//        Integer balance = cardsRepository.getCardBalance(
+//                new Card(cardNumber, cardCVV, cardExpirationDate)
+//        );
+        Card card = new Card(cardNumber, cardCVV, cardExpirationDate);
+        Integer balance = cardsRepository.getCardBalance(card);
+
+        // 2. Детальное логирование
+        log.info("=== BALANCE CHECK ===");
+        log.info("Card: {}", cardNumber);
+        log.info("Requested amount: {}", amount.getValue());
+        log.info("Balance from repo: {}", balance);
+        log.info("Balance is null? {}", (balance == null));
+        log.info("=== END BALANCE CHECK ===");
+
         return balance != null && amount.getValue() <= balance;
     }
 
     //списывает средства с карты from
     public void transferMinus(String cardNumber, Integer sum) {
         log.info("transferMinus sum = {} ", sum);
-        log.info("fee = 1% = {}", sum / 100);
+        log.info("fee = 1% = {}", sum / 10000);
         cardsRepository.setBalanceMinus(cardNumber, sum);
     }
 

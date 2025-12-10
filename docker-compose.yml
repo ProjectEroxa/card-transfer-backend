@@ -1,0 +1,9 @@
+services:
+  backend:
+    build: .                      # использует Dockerfile в текущей папке
+    container_name: card-transfer-backend
+    ports:
+      - "5500:5500"               # хост:контейнер
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker  # опционально, если нужен профиль
+    restart: unless-stopped

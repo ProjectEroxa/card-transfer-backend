@@ -22,7 +22,7 @@ public class GlobalExceptionHandler {
         return ResponseEntity
                 .status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(Map.of(
-                        "message", "Error transfer",
+                        "message", "Перевод не удался. Попробуйте еще раз",
                         "operationId", new TransferID().generateID()
                 ));
     }
@@ -35,7 +35,7 @@ public class GlobalExceptionHandler {
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body(Map.of(
-                        "message", "Error input data",
+                        "message", "Проверьте введенные данные",
                         "operationId", new TransferID().generateID()
                 ));
     }
@@ -47,7 +47,7 @@ public class GlobalExceptionHandler {
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body(Map.of(
-                        "message", "Validation error",
+                        "message", "Ошибка валидации",
                         "operationId", new TransferID().generateID()
                 ));
     }

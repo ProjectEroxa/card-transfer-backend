@@ -1,347 +1,293 @@
-2025-12-09 11:44:04 [main] INFO  c.c.CardTransferBackendApplication - Starting CardTransferBackendApplication using Java 22.0.2 with PID 26644 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
-2025-12-09 11:44:04 [main] INFO  c.c.CardTransferBackendApplication - No active profile set, falling back to 1 default profile: "default"
-2025-12-09 11:44:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5500 (http)
-2025-12-09 11:44:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-12-09 11:44:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-09 11:44:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-12-09 11:44:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1622 ms
-2025-12-09 11:44:06 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-09 11:44:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5500 (http) with context path '/'
-2025-12-09 11:44:06 [main] INFO  c.c.CardTransferBackendApplication - Started CardTransferBackendApplication in 3.447 seconds (process running for 4.301)
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Generated operationId: 349667
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Generated code: 0121
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 349667 code = 0121
-2025-12-09 11:44:15 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 11:44:31 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - getCodeTransfer id = 349667
-2025-12-09 11:44:31 [http-nio-5500-exec-3] INFO  c.c.c.CardTransferController - Operation with ID 349667 was removed from repository
-2025-12-09 11:44:31 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - removeOperation id = 349667
-2025-12-09 11:44:31 [http-nio-5500-exec-3] INFO  c.c.c.CardTransferController - Operation with ID 349667 was confirmed
-2025-12-09 11:44:34 [http-nio-5500-exec-4] INFO  c.c.service.CardTransferService - getCodeTransfer id = 349667
-2025-12-09 11:44:53 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-09 11:44:53 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-12-09 12:25:09 [main] INFO  c.c.CardTransferBackendApplicationTests - Starting CardTransferBackendApplicationTests using Java 23.0.2 with PID 22584 (started by evshe in D:\ProjectEroxa\card-transfer-backend)
-2025-12-09 12:25:09 [main] INFO  c.c.CardTransferBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-12-09 12:25:11 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-09 12:25:11 [main] INFO  c.c.CardTransferBackendApplicationTests - Started CardTransferBackendApplicationTests in 2.751 seconds (process running for 4.269)
-2025-12-09 12:25:12 [main] INFO  c.c.i.CardTransferIntegrationTest - Starting CardTransferIntegrationTest using Java 23.0.2 with PID 22584 (started by evshe in D:\ProjectEroxa\card-transfer-backend)
-2025-12-09 12:25:12 [main] INFO  c.c.i.CardTransferIntegrationTest - No active profile set, falling back to 1 default profile: "default"
-2025-12-09 12:25:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
-2025-12-09 12:25:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-12-09 12:25:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-09 12:25:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-12-09 12:25:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 518 ms
-2025-12-09 12:25:13 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-09 12:25:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 57349 (http) with context path '/'
-2025-12-09 12:25:13 [main] INFO  c.c.i.CardTransferIntegrationTest - Started CardTransferIntegrationTest in 1.092 seconds (process running for 6.4)
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Generated operationId: 239478
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Generated code: 2769
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 239478 code = 2769
-2025-12-09 12:25:13 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:25:13 [http-nio-auto-1-exec-3] INFO  c.c.service.CardTransferService - getCodeTransfer id = 239478
-2025-12-09 12:25:13 [http-nio-auto-1-exec-3] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:25:13 [http-nio-auto-1-exec-4] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:25:13 [http-nio-auto-1-exec-4] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - check balance = 8990
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Generated operationId: 952550
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Generated code: 1701
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 952550 code = 1701
-2025-12-09 12:25:14 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:25:14 [http-nio-auto-1-exec-6] INFO  c.c.service.CardTransferService - getCodeTransfer id = 952550
-2025-12-09 12:25:14 [http-nio-auto-1-exec-6] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:25:14 [http-nio-auto-1-exec-8] INFO  c.c.c.CardTransferController - ID validation failed. ID is: 
-2025-12-09 12:25:14 [http-nio-auto-1-exec-10] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 
-2025-12-09 12:25:14 [http-nio-auto-1-exec-3] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:25:14 [http-nio-auto-1-exec-2] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:25:14 [http-nio-auto-1-exec-2] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:25:14 [http-nio-auto-1-exec-2] INFO  c.c.service.CardTransferService - check balance = 7980
-2025-12-09 12:25:14 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:25:14 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> card_transfer.card_transfer_backend.controller.CardTransferController.transferCard(card_transfer.card_transfer_backend.dto.TransferRequest): [Field error in object 'transferRequest' on field 'cardFromNumber': rejected value [123456789012345]; codes [Pattern.transferRequest.cardFromNumber,Pattern.cardFromNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferRequest.cardFromNumber,cardFromNumber]; arguments []; default message [cardFromNumber],[Ljakarta.validation.constraints.Pattern$Flag;@36834d24,\d{16}]; default message [Card number must be 16 digits]] ]
-2025-12-09 12:25:14 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:25:14 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:25:14 [main] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:25:14 [main] INFO  c.c.c.CardTransferController - Generated operationId: 123456
-2025-12-09 12:25:14 [main] INFO  c.c.c.CardTransferController - Generated code: 9999
-2025-12-09 12:25:14 [main] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:25:14 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:25:14 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:25:14 [main] INFO  c.c.c.CardTransferController - ID validation failed. ID is: 
-2025-12-09 12:25:14 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:25:14 [main] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 
-2025-12-09 12:25:14 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:14 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:25:15 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:15 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:15 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:25:15 [main] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:25:15 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:15 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:15 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:25:15 [main] INFO  c.c.c.CardTransferController - Operation with ID 123456 was removed from repository
-2025-12-09 12:25:15 [main] INFO  c.c.c.CardTransferController - Operation with ID 123456 was confirmed
-2025-12-09 12:25:15 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:25:15 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:25:15 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - cardNumber =      not found
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 123456 code = 9999
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - check balance = null
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - cardNumber = null  not found
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - getCodeTransfer id = 123456
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:25:15 [main] INFO  c.c.service.CardTransferService - removeOperation id = 123456
-2025-12-09 12:25:15 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-09 12:25:15 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-12-09 12:35:18 [main] INFO  c.c.CardTransferBackendApplicationTests - Starting CardTransferBackendApplicationTests using Java 22.0.2 with PID 20340 (started by evshe in D:\ProjectEroxa\card-transfer-backend)
-2025-12-09 12:35:18 [main] INFO  c.c.CardTransferBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-12-09 12:35:21 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-09 12:35:21 [main] INFO  c.c.CardTransferBackendApplicationTests - Started CardTransferBackendApplicationTests in 3.596 seconds (process running for 7.034)
-2025-12-09 12:35:22 [main] INFO  c.c.i.CardTransferIntegrationTest - Starting CardTransferIntegrationTest using Java 22.0.2 with PID 20340 (started by evshe in D:\ProjectEroxa\card-transfer-backend)
-2025-12-09 12:35:22 [main] INFO  c.c.i.CardTransferIntegrationTest - No active profile set, falling back to 1 default profile: "default"
-2025-12-09 12:35:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
-2025-12-09 12:35:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-12-09 12:35:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-09 12:35:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-12-09 12:35:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 570 ms
-2025-12-09 12:35:23 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-09 12:35:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 57620 (http) with context path '/'
-2025-12-09 12:35:23 [main] INFO  c.c.i.CardTransferIntegrationTest - Started CardTransferIntegrationTest in 1.105 seconds (process running for 9.244)
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Generated operationId: 574322
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Generated code: 7824
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 574322 code = 7824
-2025-12-09 12:35:23 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:35:23 [http-nio-auto-1-exec-2] INFO  c.c.service.CardTransferService - getCodeTransfer id = 574322
-2025-12-09 12:35:23 [http-nio-auto-1-exec-2] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:35:23 [http-nio-auto-1-exec-4] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:35:23 [http-nio-auto-1-exec-4] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - check balance = 8990
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Generated operationId: 074208
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Generated code: 3788
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 074208 code = 3788
-2025-12-09 12:35:24 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:35:24 [http-nio-auto-1-exec-6] INFO  c.c.service.CardTransferService - getCodeTransfer id = 074208
-2025-12-09 12:35:24 [http-nio-auto-1-exec-6] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:35:24 [http-nio-auto-1-exec-7] INFO  c.c.c.CardTransferController - ID validation failed. ID is: 
-2025-12-09 12:35:24 [http-nio-auto-1-exec-9] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 
-2025-12-09 12:35:24 [http-nio-auto-1-exec-10] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:35:24 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:35:24 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:35:24 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - check balance = 7980
-2025-12-09 12:35:24 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:24 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:24 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:24 [main] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:35:24 [main] INFO  c.c.c.CardTransferController - Generated operationId: 123456
-2025-12-09 12:35:24 [main] INFO  c.c.c.CardTransferController - Generated code: 9999
-2025-12-09 12:35:24 [main] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:35:24 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:25 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:25 [main] INFO  c.c.c.CardTransferController - ID validation failed. ID is: 
-2025-12-09 12:35:25 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:35:25 [main] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 
-2025-12-09 12:35:25 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:25 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:25 [main] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:35:25 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:35:25 [main] INFO  c.c.c.CardTransferController - Operation with ID 123456 was removed from repository
-2025-12-09 12:35:25 [main] INFO  c.c.c.CardTransferController - Operation with ID 123456 was confirmed
-2025-12-09 12:35:25 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:35:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - cardNumber =      not found
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 123456 code = 9999
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - check balance = null
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - cardNumber = null  not found
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - getCodeTransfer id = 123456
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:35:25 [main] INFO  c.c.service.CardTransferService - removeOperation id = 123456
-2025-12-09 12:35:26 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-09 12:35:26 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-12-09 12:39:27 [main] INFO  c.c.CardTransferBackendApplicationTests - Starting CardTransferBackendApplicationTests using Java 23.0.2 with PID 20884 (started by evshe in D:\ProjectEroxa\card-transfer-backend)
-2025-12-09 12:39:27 [main] INFO  c.c.CardTransferBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-12-09 12:39:30 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-09 12:39:30 [main] INFO  c.c.CardTransferBackendApplicationTests - Started CardTransferBackendApplicationTests in 4.515 seconds (process running for 7.535)
-2025-12-09 12:39:31 [main] INFO  c.c.i.CardTransferIntegrationTest - Starting CardTransferIntegrationTest using Java 23.0.2 with PID 20884 (started by evshe in D:\ProjectEroxa\card-transfer-backend)
-2025-12-09 12:39:31 [main] INFO  c.c.i.CardTransferIntegrationTest - No active profile set, falling back to 1 default profile: "default"
-2025-12-09 12:39:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
-2025-12-09 12:39:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-12-09 12:39:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-09 12:39:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-12-09 12:39:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 520 ms
-2025-12-09 12:39:32 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-09 12:39:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 57723 (http) with context path '/'
-2025-12-09 12:39:32 [main] INFO  c.c.i.CardTransferIntegrationTest - Started CardTransferIntegrationTest in 1.031 seconds (process running for 9.441)
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Generated operationId: 724662
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Generated code: 8567
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 724662 code = 8567
-2025-12-09 12:39:32 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:39:33 [http-nio-auto-1-exec-2] INFO  c.c.service.CardTransferService - getCodeTransfer id = 724662
-2025-12-09 12:39:33 [http-nio-auto-1-exec-2] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:39:33 [http-nio-auto-1-exec-4] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:39:33 [http-nio-auto-1-exec-4] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - check balance = 8990
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Generated operationId: 404602
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Generated code: 0566
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 404602 code = 0566
-2025-12-09 12:39:33 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:39:33 [http-nio-auto-1-exec-6] INFO  c.c.service.CardTransferService - getCodeTransfer id = 404602
-2025-12-09 12:39:33 [http-nio-auto-1-exec-6] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:39:33 [http-nio-auto-1-exec-7] INFO  c.c.c.CardTransferController - ID validation failed. ID is: 
-2025-12-09 12:39:33 [http-nio-auto-1-exec-9] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 
-2025-12-09 12:39:33 [http-nio-auto-1-exec-10] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:39:33 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:39:33 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
-2025-12-09 12:39:33 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - check balance = 7980
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - Generated operationId: 123456
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - Generated code: 9999
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - ID validation failed. ID is: 
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - Operation with ID 123456 was removed from repository
-2025-12-09 12:39:33 [main] INFO  c.c.c.CardTransferController - Operation with ID 123456 was confirmed
-2025-12-09 12:39:33 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2025-12-09 12:39:33 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - cardNumber =      not found
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 123456 code = 9999
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - check balance = null
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - cardNumber = null  not found
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - fee = 1% = 10
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - getCodeTransfer id = 123456
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - check balance = 10000
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
-2025-12-09 12:39:34 [main] INFO  c.c.service.CardTransferService - removeOperation id = 123456
-2025-12-09 12:39:34 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-09 12:39:34 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-10 14:09:38 [main] INFO  c.c.CardTransferBackendApplicationTests - Starting CardTransferBackendApplicationTests using Java 22.0.2 with PID 20332 (started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-10 14:09:38 [main] INFO  c.c.CardTransferBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 14:09:40 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-10 14:09:40 [main] INFO  c.c.CardTransferBackendApplicationTests - Started CardTransferBackendApplicationTests in 3.001 seconds (process running for 13.809)
+2025-12-10 14:09:41 [main] INFO  c.c.i.CardTransferIntegrationTest - Starting CardTransferIntegrationTest using Java 22.0.2 with PID 20332 (started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-10 14:09:41 [main] INFO  c.c.i.CardTransferIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 14:09:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-12-10 14:09:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 14:09:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-10 14:09:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 14:09:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 594 ms
+2025-12-10 14:09:42 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-10 14:09:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 6805 (http) with context path '/'
+2025-12-10 14:09:42 [main] INFO  c.c.i.CardTransferIntegrationTest - Started CardTransferIntegrationTest in 1.224 seconds (process running for 16.055)
+2025-12-10 14:09:42 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 14:09:42 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 14:09:42 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - check balance = 10000
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - fee = 1% = 10
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Generated operationId: 348680
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - Generated code: 9172
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 348680 code = 9172
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
+2025-12-10 14:09:43 [http-nio-auto-1-exec-3] INFO  c.c.service.CardTransferService - getCodeTransfer id = 348680
+2025-12-10 14:09:43 [http-nio-auto-1-exec-3] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
+2025-12-10 14:09:43 [http-nio-auto-1-exec-4] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 14:09:43 [http-nio-auto-1-exec-4] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - check balance = 8990
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - fee = 1% = 10
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Generated operationId: 225731
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - Generated code: 6307
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 225731 code = 6307
+2025-12-10 14:09:43 [http-nio-auto-1-exec-5] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
+2025-12-10 14:09:43 [http-nio-auto-1-exec-6] INFO  c.c.service.CardTransferService - getCodeTransfer id = 225731
+2025-12-10 14:09:43 [http-nio-auto-1-exec-6] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
+2025-12-10 14:09:43 [http-nio-auto-1-exec-7] INFO  c.c.c.CardTransferController - ID validation failed. ID is: 
+2025-12-10 14:09:43 [http-nio-auto-1-exec-9] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 
+2025-12-10 14:09:43 [http-nio-auto-1-exec-10] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 14:09:43 [http-nio-auto-1-exec-1] INFO  c.c.service.CardTransferService - check balance = 7980
+2025-12-10 14:09:43 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:43 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:43 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - Generated operationId: 123456
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - Generated code: 9999
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - ID validation failed. ID is: 
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 0000
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - Operation with ID 123456 was removed from repository
+2025-12-10 14:09:44 [main] INFO  c.c.c.CardTransferController - Operation with ID 123456 was confirmed
+2025-12-10 14:09:44 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-10 14:09:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - cardNumber = 9999999999999999  not found
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - cardNumber =      not found
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 123456 code = 9999
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - check balance = null
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - check balance = 10000
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - cardNumber = null  not found
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - fee = 1% = 10
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - getCodeTransfer id = 123456
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - check balance = 10000
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
+2025-12-10 14:09:44 [main] INFO  c.c.service.CardTransferService - removeOperation id = 123456
+2025-12-10 14:09:45 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-10 14:09:45 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-10 17:02:54 [main] INFO  c.c.CardTransferBackendApplication - Starting CardTransferBackendApplication using Java 22.0.2 with PID 15120 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-10 17:02:54 [main] INFO  c.c.CardTransferBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 17:02:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5500 (http)
+2025-12-10 17:02:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 17:02:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-10 17:02:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 17:02:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1888 ms
+2025-12-10 17:02:57 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-10 17:02:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5500 (http) with context path '/'
+2025-12-10 17:02:57 [main] INFO  c.c.CardTransferBackendApplication - Started CardTransferBackendApplication in 3.937 seconds (process running for 5.018)
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - === BALANCE CHECK ===
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Card: 1234567890123456
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Requested amount: 1000
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Balance from repo: 1000000
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Balance is null? false
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - === END BALANCE CHECK ===
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - fee = 1% = 10
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Generated operationId: 342556
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Generated code: 8787
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 342556 code = 8787
+2025-12-10 17:03:09 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
+2025-12-10 17:03:31 [http-nio-5500-exec-4] INFO  c.c.service.CardTransferService - getCodeTransfer id = 342556
+2025-12-10 17:03:53 [http-nio-5500-exec-4] INFO  c.c.service.CardTransferService - getCodeTransfer id = 342556
+2025-12-10 17:04:09 [http-nio-5500-exec-4] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 8157
+2025-12-10 17:04:48 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-10 17:04:48 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-10 17:05:18 [main] INFO  c.c.CardTransferBackendApplication - Starting CardTransferBackendApplication using Java 22.0.2 with PID 17924 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-10 17:05:18 [main] INFO  c.c.CardTransferBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 17:05:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5500 (http)
+2025-12-10 17:05:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 17:05:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-10 17:05:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 17:05:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1681 ms
+2025-12-10 17:05:21 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-10 17:05:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5500 (http) with context path '/'
+2025-12-10 17:05:21 [main] INFO  c.c.CardTransferBackendApplication - Started CardTransferBackendApplication in 3.575 seconds (process running for 4.107)
+2025-12-10 17:05:43 [http-nio-5500-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 17:05:43 [http-nio-5500-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 17:05:43 [http-nio-5500-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - === BALANCE CHECK ===
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Card: 1234567890123456
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Requested amount: 1000
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Balance from repo: 1000000
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Balance is null? false
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - === END BALANCE CHECK ===
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - fee = 1% = 10
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Generated operationId: 104022
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Generated code: 2598
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 104022 code = 2598
+2025-12-10 17:05:44 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
+2025-12-10 17:06:23 [http-nio-5500-exec-4] INFO  c.c.service.CardTransferService - getCodeTransfer id = 104022
+2025-12-10 17:07:00 [http-nio-5500-exec-4] INFO  c.c.c.CardTransferController - Equals validation failed. Code is: 8157
+2025-12-10 17:07:06 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-10 17:07:06 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-10 17:11:08 [main] INFO  c.c.CardTransferBackendApplication - Starting CardTransferBackendApplication using Java 22.0.2 with PID 28836 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-10 17:11:08 [main] INFO  c.c.CardTransferBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 17:11:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5500 (http)
+2025-12-10 17:11:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 17:11:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-10 17:11:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 17:11:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1733 ms
+2025-12-10 17:11:11 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-10 17:11:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5500 (http) with context path '/'
+2025-12-10 17:11:11 [main] INFO  c.c.CardTransferBackendApplication - Started CardTransferBackendApplication in 3.622 seconds (process running for 4.168)
+2025-12-10 17:11:29 [http-nio-5500-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 17:11:29 [http-nio-5500-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 17:11:29 [http-nio-5500-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - === BALANCE CHECK ===
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - Card: 1234567890123456
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - Requested amount: 1000
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - Balance from repo: 1000000
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - Balance is null? false
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - === END BALANCE CHECK ===
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000, currency='RUB'}}
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - transferMinus sum = 1000 
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - fee = 1% = 10
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - transferPlus sum = 1000 
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Generated operationId: 435047
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Generated code: 8565
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 435047 code = 8565
+2025-12-10 17:11:30 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
+2025-12-10 17:11:54 [http-nio-5500-exec-4] INFO  c.c.service.CardTransferService - getCodeTransfer id = 104022
+2025-12-10 17:12:11 [http-nio-5500-exec-4] INFO  c.c.c.CardTransferController - Code validation failed. Code is: 8157
+2025-12-10 17:12:15 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-10 17:12:15 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-10 17:25:48 [main] INFO  c.c.CardTransferBackendApplication - Starting CardTransferBackendApplication using Java 22.0.2 with PID 29808 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-10 17:25:48 [main] INFO  c.c.CardTransferBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 17:25:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5500 (http)
+2025-12-10 17:25:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 17:25:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-10 17:25:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 17:25:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1645 ms
+2025-12-10 17:25:51 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-10 17:25:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5500 (http) with context path '/'
+2025-12-10 17:25:51 [main] INFO  c.c.CardTransferBackendApplication - Started CardTransferBackendApplication in 4.276 seconds (process running for 4.666)
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - === BALANCE CHECK ===
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Card: 1234567890123457
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Requested amount: 100000
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Balance from repo: null
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Balance is null? true
+2025-12-10 17:26:29 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - === END BALANCE CHECK ===
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - === BALANCE CHECK ===
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - Card: 1234567890123456
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - Requested amount: 100000
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - Balance from repo: 1000000
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - Balance is null? false
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - === END BALANCE CHECK ===
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=100000, currency='RUR'}}
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - transferMinus sum = 100000 
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - fee = 1% = 1000
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - transferPlus sum = 100000 
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Generated operationId: 626653
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Generated code: 3392
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 626653 code = 3392
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - getCodeTransfer id = 626653
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - getCodeTransfer id = 626653
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Operation with ID 626653 was removed from repository
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - removeOperation id = 626653
+2025-12-10 17:26:39 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Operation with ID 626653 was confirmed
+2025-12-10 17:26:56 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-10 17:26:56 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-10 17:28:15 [main] INFO  c.c.CardTransferBackendApplication - Starting CardTransferBackendApplication using Java 22.0.2 with PID 25648 (D:\ProjectEroxa\card-transfer-backend\target\classes started by evshe in D:\ProjectEroxa\card-transfer-backend)
+2025-12-10 17:28:15 [main] INFO  c.c.CardTransferBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 17:28:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5500 (http)
+2025-12-10 17:28:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 17:28:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-10 17:28:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 17:28:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1642 ms
+2025-12-10 17:28:18 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-10 17:28:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5500 (http) with context path '/'
+2025-12-10 17:28:18 [main] INFO  c.c.CardTransferBackendApplication - Started CardTransferBackendApplication in 3.499 seconds (process running for 3.932)
+2025-12-10 17:28:42 [http-nio-5500-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 17:28:42 [http-nio-5500-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 17:28:42 [http-nio-5500-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-10 17:28:43 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 17:28:43 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 17:28:43 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - === BALANCE CHECK ===
+2025-12-10 17:28:43 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - Card: 1234567890123456
+2025-12-10 17:28:43 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - Requested amount: 1000100
+2025-12-10 17:28:43 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - Balance from repo: 1000000
+2025-12-10 17:28:43 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - Balance is null? false
+2025-12-10 17:28:43 [http-nio-5500-exec-3] INFO  c.c.service.CardTransferService - === END BALANCE CHECK ===
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123456 accept in data
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - cardNumber = 1234567890123457 accept in data
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - === BALANCE CHECK ===
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Card: 1234567890123456
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Requested amount: 1000000
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Balance from repo: 1000000
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - Balance is null? false
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - === END BALANCE CHECK ===
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Transfer request: TransferRequest{cardFromNumber='1234567890123456', cardFromValidTill='12/26', cardFromCVV='123', cardToNumber='1234567890123457', amount=Amount{value=1000000, currency='RUR'}}
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - transferMinus sum = 1000000 
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - fee = 1% = 10000
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - transferPlus sum = 1000000 
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Generated operationId: 597781
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - Generated code: 1229
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.service.CardTransferService - addIDAndCodeToRepo id = 597781 code = 1229
+2025-12-10 17:28:50 [http-nio-5500-exec-1] INFO  c.c.c.CardTransferController - === TRANSFER CREATED ===
+2025-12-10 17:28:50 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - getCodeTransfer id = 597781
+2025-12-10 17:28:50 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - getCodeTransfer id = 597781
+2025-12-10 17:28:50 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Operation with ID 597781 was removed from repository
+2025-12-10 17:28:50 [http-nio-5500-exec-2] INFO  c.c.service.CardTransferService - removeOperation id = 597781
+2025-12-10 17:28:50 [http-nio-5500-exec-2] INFO  c.c.c.CardTransferController - Operation with ID 597781 was confirmed
+2025-12-10 17:29:50 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-10 17:29:51 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

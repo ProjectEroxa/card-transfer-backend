@@ -9,15 +9,15 @@ import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
 @RestController
-@RequestMapping("/transfer")
+@CrossOrigin(origins = "http://localhost:3000")
 public class CardTransferController {
     private static final Logger log = LoggerFactory.getLogger(CardTransferController.class);
     private final CardTransferService cardTransferService;
@@ -35,6 +35,11 @@ public class CardTransferController {
     @PostMapping("/transfer")
     public ResponseEntity<?> transferCard(@Valid @RequestBody TransferRequest transferRequest) {
 
+        System.out.println("=== REQUEST FROM FRONTEND ===");
+        System.out.println("cardFromNumber: '" + transferRequest.getCardFromNumber() + "'");
+        System.out.println("cardFromValidTill: '" + transferRequest.getCardFromValidTill() + "'");
+        System.out.println("cardFromCVV: '" + transferRequest.getCardFromCVV() + "'");
+        System.out.println("cardToNumber: '" + transferRequest.getCardToNumber() + "'");
         // обработка исключений 500 срабатывает автоматически, так как есть GlobalExceptionHandler
 
         //в реквесте (request) содержится инфа о карте отправителя, получателе и сумме перевода
@@ -79,18 +84,20 @@ public class CardTransferController {
 
         // получаем ID от клиента
         String operationId = confirmOperationRequest.getOperationId();
+        // получаем код от клиента
+        String code = cardTransferService.getCodeTransfer(operationId);//тут надо бы получить код от клиента и дальше сравнивать с репо
 
         if (confirmOperationRequest.getOperationId() == null || confirmOperationRequest.getOperationId().isBlank()) {
             log.info("ID validation failed. ID is: {}", confirmOperationRequest.getOperationId());
             throw new IllegalArgumentException("ID operation is absent");
         }
 
-        if (confirmOperationRequest.getConfirmationCode() == null || confirmOperationRequest.getConfirmationCode().isBlank()) {
+        if (code == null || code.isBlank()) {
             log.info("Code validation failed. Code is: {}", confirmOperationRequest.getConfirmationCode());
             throw new IllegalArgumentException("Code operation is absent");
         }
 
-        if (!cardTransferService.getCodeTransfer(operationId).equals(confirmOperationRequest.getConfirmationCode())) {
+        if (!code.equals(cardTransferService.getCodeTransfer(operationId))) {
             log.info("Equals validation failed. Code is: {}", confirmOperationRequest.getConfirmationCode());
             throw new IllegalArgumentException("Code operation is incorrect");
         }

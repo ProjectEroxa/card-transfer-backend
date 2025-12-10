@@ -10,9 +10,9 @@ import java.util.concurrent.ConcurrentHashMap;
 public class InMemoryCardsRepository {
     private final ConcurrentHashMap<Card, Integer> cardStorage = new ConcurrentHashMap<>(
             Map.of(
-                    new Card("1234567890123456", "123", "12/26"), 10000,
-                    new Card("1234567890123457", "321", "11/26"), 20000,
-                    new Card("1234567890123458", "222", "11/27"), 30000)
+                    new Card("1234567890123456", "123", "12/26"), 10000_00,
+                    new Card("1234567890123457", "321", "11/26"), 20000_00,
+                    new Card("1234567890123458", "222", "11/27"), 30000_00)
     );
 
     // баланс по данным карты
@@ -36,11 +36,12 @@ public class InMemoryCardsRepository {
             }
         }
     }
+
     //в меньшую сторону, со взыманием комиссии (1%)
     public void setBalanceMinus(String cardNumber, Integer sum) {
         for (Map.Entry<Card, Integer> entry : cardStorage.entrySet()) {
             if (entry.getKey().getCardNumber().equals(cardNumber)) {
-                entry.setValue(entry.getValue() - sum - (sum / 100));
+                entry.setValue(entry.getValue() - sum - (sum / 10000));
             }
         }
     }

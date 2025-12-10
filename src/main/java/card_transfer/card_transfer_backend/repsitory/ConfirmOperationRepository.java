@@ -18,6 +18,7 @@ public class ConfirmOperationRepository {
     public String getConfirmOperation(String id) {
         return confirmOperationsStorage.get(id);
     }
+
     //удалить
     public void removeOperation(String operationId) {
         confirmOperationsStorage.remove(operationId);
